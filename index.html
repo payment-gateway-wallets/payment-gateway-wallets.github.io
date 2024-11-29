@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3/dist/web3.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Payment Gateway</h1>
+    </header>
+
+    <main>
+        <section id="invoice-section">
+            <h2>Create Crypto Invoice</h2>
+            <form id="create-invoice-form">
+                <label for="amount">Amount (ETH):</label>
+                <input type="number" id="amount" placeholder="Amount in ETH" required>
+                <button type="submit">Create Invoice</button>
+            </form>
+            <div id="invoice-link"></div>
+        </section>
+
+        <section id="payment-section">
+            <h2>Make a Payment</h2>
+            <form id="payment-form">
+                <label for="payment-amount">Amount:</label>
+                <input type="text" id="payment-amount" placeholder="Enter amount to pay" required>
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Payment Gateway</p>
+    </footer>
+
+    <script src="src/scripts/payment.js"></script>
+</body>
+</html>
