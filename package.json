@@ -1,0 +1,19 @@
+{
+  "name": "payment-gateway-wallets",
+  "version": "1.0.0",
+  "description": "Payment Gateway with Crypto Invoicing",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "npm run build",
+    "deploy": "npm run deploy"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "web3": "^1.6.1"
+  },
+  "devDependencies": {},
+  "author": "Your Name",
+  "license": "ISC"
+}
